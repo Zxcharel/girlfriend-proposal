@@ -71,7 +71,7 @@ body{
 #handEmoji {
     position: absolute;
     font-size: 24px;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
 }
 
 #yesButton {
@@ -80,4 +80,5 @@ body{
 
 #noButton {
     border-radius: 10px;
+    transition: all 0.1s ease;
 }

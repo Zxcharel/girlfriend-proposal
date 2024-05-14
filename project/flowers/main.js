@@ -53,3 +53,14 @@ document.addEventListener('mousemove', (event) => {
         }, 2000);
     }
 });
+
+document.addEventListener('click', (event) => {
+    function getRandomInt(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
+    }
+
+    window.location.href = "death/" + getRandomInt(1, 3) + ".html";
+
+});

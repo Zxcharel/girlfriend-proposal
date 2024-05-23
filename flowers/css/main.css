@@ -1771,13 +1771,13 @@ body {
 @-webkit-keyframes love {
   50% {
     fill: rgb(253, 66, 19);
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @keyframes love {
   50% {
     fill: rgb(253, 93, 19);
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }

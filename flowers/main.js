@@ -4,8 +4,8 @@ onload = () =>{
 
 const noButton = document.getElementById('noButton');
 const handEmoji = document.getElementById('handEmoji');
-const pushDistance = 50; // Distance to push the button away
-const threshold = 50; // Distance threshold to trigger the push
+const pushDistance = 50; 
+const threshold = 50;
 let hideEmojiTimeout;
 
 document.addEventListener('mousemove', (event) => {
@@ -43,10 +43,9 @@ document.addEventListener('mousemove', (event) => {
         handEmoji.style.top = `${noButtonCenter.y - 12}px`;
         handEmoji.classList.remove('hidden');
 
-        // Clear any previous timeout to hide the emoji
         clearTimeout(hideEmojiTimeout);
     } else {
-        // Set a timeout to hide the emoji after 2 seconds
+
         clearTimeout(hideEmojiTimeout);
         hideEmojiTimeout = setTimeout(() => {
             handEmoji.classList.add('hidden');
